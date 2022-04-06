@@ -10,6 +10,13 @@ body {
     height: 100vh;
     font-family: 'Poppins', sans-serif;
     color: white;
+    background-color: #475C7A;
+}
+
+hr {
+    border-top: 1px solid #D8737F;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .transition, button, a, .button {
@@ -25,31 +32,13 @@ h1 {
     height: 100%;
     width: 100%;
     background-image:
-        linear-gradient(to bottom,transparent,#0d0d0d),
-        url('https://th.bing.com/th/id/R.a29f2fefeb125028a6a26851c596888c?rik=vl%2b%2f0EED36km0Q&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fYHSuCPt.jpg&ehk=8hz82UYUCvg%2bU07DPIhDawOMX2%2fn78fFaSk650II9q8%3d&risl=&pid=ImgRaw&r=0');
+        linear-gradient(to bottom,transparent,#475C7A),
+        url('https://images.unsplash.com/photo-1559193710-e6d57d8155cd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');
     background-size: cover;
     background-position: center;
     z-index: 1;
     background-repeat: none;
     position: relative;
-}
-
-.split {
-    margin: 2vmax;
-    width: 50%;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding: 20px;
-    position:fixed;
-  }
-
-.left {
-    left:0;
-}
-
-.right {
-    right: 0;
 }
 
 #code-font {
@@ -70,21 +59,30 @@ h1 {
 }
 
 .content p {
-    font-size: 2em;
+    font-size: 1.5vmax;
     line-height: 2.5vmax;
-    text-align: left;
     margin-bottom: 5%;
     margin-left: 8vmax;
     margin-right: 8vmax;
 }
 
+.about-text p {
+    text-align: left;
+}
+
 .content h1 {
     font-size: 3vmax;
-    color:#00b6f9;
+    color:#FCBB6D;
+    background-color: #D8737F;
+    background-image:
+        linear-gradient(transparent,#AB6C82,#685D79);
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 10px;
 }
 
 .content h2 {
-    font-size: 1.75em;
+    font-size: 1.85vmax;
 }
 
 
@@ -92,18 +90,26 @@ h1 {
     border-radius: 50%;
     border-width: 0.5vmax;
     box-shadow:
-    0 0 1vh 1vh #00b6f9; /* outer cyan */
+    0 0 1vh 1vh #FCBB6D; /* outer cyan */
     width: 15vmax;
 }
 
-.text-content-center {
-    text-align: center;
-    position: relative;
-    top: 15%;
-    transform: translateY(-50%);
+.project-box {
+    border-radius: 10px;
+    background-color: whitesmoke;
+    margin: 5%;
 }
 
-.text-content-center2 {
+.project-box h2, .project-box p{
+    color: black;
+    text-align: center;
+}
+
+.project-box h2 {
+    padding-top: 1%;
+}
+
+.text-content-center {
     text-align: center;
     position: relative;
     top: 15%;
@@ -117,14 +123,14 @@ h1 {
 }
 
 b i {
-    color: #00b6f9;
+    color: #FCBB6D;
     font-style: normal;
 }
 
 .resume-btn {
-    border-color: white;
+    color: rgb(255, 255, 255);
     border-style: none;
-    background-color: #00b6f9;
+    background-color: #FCBB6D;
     border-radius: 50px;
     padding:1vmax 1vmax;
     font-size: 1.25vmax;
@@ -132,7 +138,7 @@ b i {
 }
 
 .resume-btn:hover {
-    color:#000d11
+    color: black;
 }
 
 .social-media {
@@ -151,16 +157,16 @@ b i {
 }
 
 .social-media a:hover{
-    color: #00b6f9;
+    color: #FCBB6D;
 }
 
 .social-media .tooltip.bottom .tooptip-arrow {
-    border-bottom-color: #00b6f9;
+    border-bottom-color: #FCBB6D;
 }
 
 .social-media .tooltip-inner {
     background-color: transparent;
-    color: #00b6f9;
+    color: #FCBB6D;
     font-size: 16px;
 }
 
@@ -176,7 +182,7 @@ b i {
 }
 
 #home nav a:hover{
-    color:deepskyblue;
+    color:#FCBB6D;
 }
 
 .menu-top {
@@ -200,7 +206,7 @@ b i {
 .holder {
     position: relative;
     z-index: 11;
-    background: #00b6f9;
+    background: #FCBB6D;
     transform: translate(0, -100vh);
 }
 
@@ -258,7 +264,7 @@ b i {
     right: 0;
     left: 0;
     margin: auto;
-    bottom: 2.5%;
+    bottom: 10vh;
     z-index: 11;
     width: 2.5vmax;
     height: 4vmax;
@@ -293,7 +299,7 @@ b i {
 
 button.menu-toggle.opened {
     transform: translate(0, -1px);
-    color:#00b6f9;
+    color:#FCBB6D;
 }
 
 button.menu-toggle {

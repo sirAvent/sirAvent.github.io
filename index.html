@@ -31,7 +31,7 @@
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
                     <a href="#projects">Projects</a>
-                    <a href="">Contact</a>
+                    <a href="#contact">Contact</a>
                 </nav>
 
                 <button class="menu-toggle transition" id="menu-toggle">
@@ -45,23 +45,14 @@
                 </button>
             </div>
 
-
-            <div id="canvas_go">
-                <div id="particles-js"></div>
-                <div class="count-particles">
-                    <span class="js-count-particles"></span>
-                </div>
-            </div>
-            
             <div class="text-start-center">
                 <div class="container">
                     <img id="profile-pic"
                     src="https://avatars.githubusercontent.com/u/65209258?v=4">
                     <h1 class="cd-headline clip is-full-width">
                         <span class="cd-words-wrapper">
-                            <b class="is-visible">HELLO, I'M <i>AVENT CHIU</i>.</b>
+                            <b class="is-visible">HELLO, I'M <i>AVENT</i> CHIU.</b>
                             <b>I'M A <i>FULL-STACK</i> DEVELOPER</b>
-                            <b>AND A <i>SOFTWARE ENGINEER</i>.</b>
                         </span>
                         <br>
                         <button class="resume-btn">RESUME</button>
@@ -81,7 +72,7 @@
         </header>
 
         <div class="content" id="about">
-            <div class="text-content-center2">
+            <div class="text-content-center about-text">
                 <h1>About</h1>
                 <h2 id="code-font">> self.bio</h2>
                 <p>I'm an aspiring software engineer and full-stack developer. I'm very passionate in front-end development, 
@@ -102,19 +93,47 @@
         <div class="content" id="projects">
             <div class="text-content-center">
                 <h1>Projects</h1>
-                <div class="left split">
-                    <h2>Herro</h2>
-                    <p>I'm an aspiring software engineer and full-stack developer. I'm very passionate in front-end development, 
-                        game design, and UI/UX design!
-                    </p>
+                <div class="project-box">
+                    <h2>Wordle on Discord Bot</h2>
+                    <hr>
+                    <p>A Discord bot that starts a game of Wordle to any user that sends the command "!start". Users play a game where they try to guess a 
+                        random 5 letter word in 6 tries. Uses Python and discord.py</p>
                 </div>
 
-                <div class="right split">
-                    <h2>Herro</h2>
-                    <p>I'm an aspiring software engineer and full-stack developer. You can catch me developing
-                        web-applications or programming for school. I'm very passionate in front-end development, 
-                        game design, and UI/UX design! I enjoy working out, playing videogames, muay thai, and COOKING! 🤤
-                    </p>
+                <div class="project-box">
+                    <h2>Messenger Application</h2>
+                    <hr>
+                    <p>A messenger application that allows users create an account to send messages to each other. Users are connected through a
+                        UCI server and messages are encrypted to ensure safety. Users also have the ability to access the weather and music using text commands. 
+                        Uses Python, Tkinter for GUI, NaPyCl, OpenWeather API, and lastFM API.</p>
+                </div>
+
+                <div class="project-box">
+                    <h2>Wordle on Discord Bot</h2>
+                    <hr>
+                    <p>A Discord bot that starts a game of Wordle to any user that sends the command "!start". Users play a game where they try to guess a 
+                        random 5 letter word in 6 tries. Uses Python and discord.py</p>
+                </div>
+
+                <div class="project-box">
+                    <h2>Wordle on Discord Bot</h2>
+                    <hr>
+                    <p>A Discord bot that starts a game of Wordle to any user that sends the command "!start". Users play a game where they try to guess a 
+                        random 5 letter word in 6 tries. Uses Python and discord.py</p>
+                </div>
+
+                <div class="project-box">
+                    <h2>Wordle on Discord Bot</h2>
+                    <hr>
+                    <p>A Discord bot that starts a game of Wordle to any user that sends the command "!start". Users play a game where they try to guess a 
+                        random 5 letter word in 6 tries. Uses Python and discord.py</p>
+                </div>
+            </div>
+
+
+            <div class="content" id="contact">
+                <div class="text-content-center about-text">
+                    <h1>Contact</h1>
                 </div>
             </div>
         </div>
@@ -124,8 +143,6 @@
         <!-- JQuery Cdn js-->
         <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
         <script src="animatedheadline.js"></script>
-        <script src="particles.min.js"></script>
-        <script src="app.js"></script>
 
         <!-- Bootstrap Cdn js-->
         <script
