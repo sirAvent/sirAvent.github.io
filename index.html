@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Avent Chiu</title>
+
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+        rel="stylesheet">
+
+        <!-- FontAwesome Cdn-->
+        <link rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+        <!-- Bootstrap Cdn-->
+        <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+        <!-- Animated Headline-->
+        <link rel="stylesheet" href="animatedheadlines.css">
+        
+        <!-- Styling -->
+        <link rel="stylesheet" href="style.css">
+    
+    </head>
+    <body>
+        <header id="home" class="header-top">
+            <div class="menu-top">
+                <nav class="holder transition">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="">Contact</a>
+                </nav>
+
+                <button class="menu-toggle transition" id="menu-toggle">
+                    <svg class="icon icon-menu-toggle" x="0px" y="0px" viewBox="0 0 100 100">
+                        <g class="svg-menu-toggle">
+                            <path class="line line-1" d="M5 13h90v14H5z" />
+                            <path class="line line-2" d="M5 43h90v14H5z" />
+                            <path class="line line-3" d="M5 73h90v14H5z" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+
+
+            <div id="canvas_go">
+                <div id="particles-js"></div>
+                <div class="count-particles">
+                    <span class="js-count-particles"></span>
+                </div>
+            </div>
+            
+            <div class="text-start-center">
+                <div class="container">
+                    <img id="profile-pic"
+                    src="https://avatars.githubusercontent.com/u/65209258?v=4">
+                    <h1 class="cd-headline clip is-full-width">
+                        <span class="cd-words-wrapper">
+                            <b class="is-visible">HELLO, I'M <i>AVENT CHIU</i>.</b>
+                            <b>I'M A <i>FULL-STACK</i> DEVELOPER</b>
+                            <b>AND A <i>SOFTWARE ENGINEER</i>.</b>
+                        </span>
+                        <br>
+                        <button class="resume-btn">RESUME</button>
+                    </h1>
+                    <p class="social-media">
+                        <a href="" class="fab fa-github" data-toggle="tooltip" title="GitHub"></a>
+                        <a href="" class="fab fa-linkedin" data-toggle="tooltip" title="LinkedIn"></a>
+                    </p>          
+                </div>
+            </div>
+
+            <div class="scroll-mouse">
+                <a href="#about">
+                    <div class="scroll-icon"></div>
+                </a>
+            </div>
+        </header>
+
+        <div class="content" id="about">
+            <div class="text-content-center2">
+                <h1>About</h1>
+                <h2 id="code-font">> self.bio</h2>
+                <p>I'm an aspiring software engineer and full-stack developer. I'm very passionate in front-end development, 
+                    game design, and UI/UX design!
+                </p>
+                <h2 id="code-font">> self.education</h2>
+                <p>
+                    UC Irvine, Class of 2024, B.S. Computer Science
+                </p>
+
+                <h2 id="code-font">> self.hobbies</h2>
+                <p>
+                    [working out, videogames, muay thai, cooking]
+                </p>
+            </div>
+        </div>
+
+        <div class="content" id="projects">
+            <div class="text-content-center">
+                <h1>Projects</h1>
+                <div class="left split">
+                    <h2>Herro</h2>
+                    <p>I'm an aspiring software engineer and full-stack developer. I'm very passionate in front-end development, 
+                        game design, and UI/UX design!
+                    </p>
+                </div>
+
+                <div class="right split">
+                    <h2>Herro</h2>
+                    <p>I'm an aspiring software engineer and full-stack developer. You can catch me developing
+                        web-applications or programming for school. I'm very passionate in front-end development, 
+                        game design, and UI/UX design! I enjoy working out, playing videogames, muay thai, and COOKING! 🤤
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- JQuery Cdn js-->
+        <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+        <script src="animatedheadline.js"></script>
+        <script src="particles.min.js"></script>
+        <script src="app.js"></script>
+
+        <!-- Bootstrap Cdn js-->
+        <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+        </script>
+
+        <!-- JavaScript Code-->
+        <script>
+            
+            $(function(){
+                "use strict";
+                $('.social-media [data-toggle="tooltip"]').tooltip({
+                    placement: 'bottom'
+                });
+
+                var button = document.getElementById('menu-toggle');
+                button.onclick = function(){
+                    if (-1 !== button.className.indexOf( 'opened') ) {
+                        button.className = button.className.replace(' opened', '');
+                        button.setAttribute('aria-expanded','false');
+                    } else{
+                        button.className += ' opened';
+                        button.setAttribute( 'aria-expanded', 'true');
+                    }
+                };
+
+                var button_tog = $('.menu-toggle');
+                button_tog.on("click", function(){
+                    if ($('.menu-toggle').hasClass('opened')){
+                        $('.holder').addClass('active');
+                    } else{
+                        $('.holder').removeClass('active');
+                    }
+                });
+            });
+
+        </script>
+    </body>
+</html>
