@@ -11,6 +11,8 @@ body {
     font-family: 'Poppins', sans-serif;
     color: white;
     background-color: #475C7A;
+    background-image:
+    linear-gradient(to bottom,#475C7A,#3F5A7F,  #475C7A);
 }
 
 hr {
@@ -28,6 +30,17 @@ h1 {
     font-weight: 400;
 }
 
+.about-grid {
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: 4fr 2fr;
+}
+
+.about-item1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
 .grid-container {
     display: grid;
     column-gap: 50px;
@@ -43,7 +56,7 @@ h1 {
     height: 100%;
     width: 100%;
     background-image:
-        linear-gradient(to bottom,transparent,#475C7A),
+        linear-gradient(to bottom,#00000047,#475C7A),
         url('https://images.unsplash.com/photo-1559193710-e6d57d8155cd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');
     background-size: cover;
     background-position: center;
@@ -101,13 +114,11 @@ h1 {
     font-size: 1.85vmax;
 }
 
-
-#profile-pic {
-    border-radius: 50%;
+img#profile-pic {
+    width: 80%;
+    margin-top: 15%;
+    border-radius: 15%;
     border-width: 0.5vmax;
-    box-shadow:
-    0 0 1vh 1vh #FCBB6D; /* outer cyan */
-    width: 15vmax;
 }
 
 .reveal{
@@ -126,6 +137,7 @@ h1 {
     background-color: rgba(0, 0, 0, 0.479);
     margin: 5%;
     height:60vh;
+    box-shadow: 0px 2px 10px 5px #161616;
 }
 
 .project-box h2, .project-box p{
@@ -192,17 +204,17 @@ b i {
 }
 
 .resume-btn {
-    color: rgb(255, 255, 255);
+    color: #475C7A;
     border-style: none;
     background-color: #FCBB6D;
     border-radius: 50px;
     padding:1vmax 1vmax;
     font-size: 1.25vmax;
-    font-weight: 400;
+    font-weight: 800;
 }
 
 .resume-btn:hover {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .social-media {
@@ -321,7 +333,7 @@ b i {
     right: 0;
     left: 0;
     margin: auto;
-    bottom: 5vh;
+    bottom: 10%;
     z-index: 11;
     width: 2vmax;
     height: 3vmax;
@@ -412,19 +424,16 @@ button.menu-toggle {
 .menu-toggle.opened .svg-menu-toggle .line-3 {
     transform: rotate(-45deg) translateY(0em) translateX(0em);
 }
-@media only screen and (max-width: 1200px) {
-    .project-box {
-        height:80vh;
-    }
-    .text-content-center {
-        top: 30%;
-    }
-}
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 820px) {
     .grid-container {
-        display: block;
+        display: inline-block;
     }
+
+    .about-grid {
+        display:inline-block;
+    }
+
 
     .item1 {
         grid-column-start: 1;
@@ -441,27 +450,89 @@ button.menu-toggle {
     }
 
     .project-box {
-        height:63vh;
+        height:70vh;
         margin-bottom:20%;
         margin-top:10%;
     }
 
+    .project-box h2{
+        margin-bottom:10%;
+        transform: translateY(100%);
+    }
+
     #about, #contact {
-        height:80%;
+        height:100%;
+    }
+
+    img#profile-pic {
+        width: 50%;
+        transform: translateY(-48vh);
+    }
+
+    div#about-info {
+        transform: translateY(35vh);
     }
 }
 
-
-@media only screen and (max-height: 500px) {
+@media only screen and (max-width: 300px) {
     .project-box {
-        height:130vh;
+        height:80vh;
+        margin-bottom:20%;
+        margin-top:10%;
+    }
+
+    img#profile-pic {
+        width: 60vw;
+        transform: translateY(-55vh);
+    }
+
+}
+
+@media only screen and (max-height: 600px) {
+    .project-box {
+        height:100vh;
     }
 
     .content-projects {
         height:240%;
         margin-bottom: 15%;
     }
+
 }
+
+@media only screen and (max-height: 590px) {
+    .project-box {
+        height:125vh;
+    }
+
+    .content-projects {
+        height:240%;
+        margin-bottom: 15%;
+    }
+
+}
+
+@media only screen and (max-width: 700px) and (max-height: 400px) {
+    div#about{
+        top:35%;
+    }
+
+    div#contact{
+        top:70%;
+    }
+
+    img#profile-pic {
+        width: 25%;
+        transform: translateY(-110vh);
+    }
+
+    div#about-info {
+        transform: translateY(35vh);
+    }
+
+}
+
+
 
 
 @keyframes scroll {
