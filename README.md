@@ -1,5 +1,5 @@
 ## Live preview
-https://siravent.github.io/portfolio/ 
+https://siravent.github.io/
 
 
 ## Acknowledgements
