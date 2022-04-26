@@ -43,7 +43,7 @@ h1 {
 
 .grid-container {
     display: grid;
-    column-gap: 50px;
+    column-gap: 0px;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -85,6 +85,8 @@ h1 {
     z-index: 0;
     background-repeat: none;
     position: relative;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .content p {
@@ -443,6 +445,8 @@ button.menu-toggle {
 
     .content {
         height: auto;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .content h2 {
