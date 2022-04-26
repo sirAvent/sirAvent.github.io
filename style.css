@@ -500,6 +500,7 @@ button.menu-toggle {
     .content-projects {
         height:240%;
         margin-bottom: 15%;
+        padding: 0;
     }
     
     .content {
@@ -517,6 +518,7 @@ button.menu-toggle {
     .content-projects {
         height:240%;
         margin-bottom: 15%;
+        padding: 0;
     }
     
     .content {
