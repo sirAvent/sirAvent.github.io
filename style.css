@@ -85,8 +85,8 @@ h1 {
     z-index: 0;
     background-repeat: none;
     position: relative;
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 
 .content p {
@@ -102,7 +102,7 @@ h1 {
 }
 
 .content h1 {
-    font-size: 3vmax;
+    font-size: 4vmax;
     color:#D8737F;
     text-decoration: none;
     border-bottom:.5vmax solid #FCBB6D;
@@ -138,8 +138,8 @@ img#profile-pic {
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.479);
     margin: 5%;
-    height:auto;
-    box-shadow: 0px 10px 15px 5px #161616;
+    height: auto;
+    box-shadow: 0px 10px 15px 5px rgb(22 22 22 / 40%);
 }
 
 .table {
@@ -239,14 +239,13 @@ img#profile-pic {
 .project-box img {
     height:25vh;
     margin-left: 0%;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     width: 100%;
 }
 
 .project-box:hover {
     background-color:rgba(78, 55, 7, 0.281);
-    box-shadow: 0px 0px 30px 15px #FCBB6D;
-    transition: all 0.30s ease-in-out;
 }
 
 .text-content-center {
@@ -345,7 +344,7 @@ b i {
 
 .holder.active {
     transform: translate(0, 0);
-    box-shadow: 0 6px 17px 0px rgba(0,0,0,0.43);
+    box-shadow: 0px 10px 15px 5px rgb(22 22 22 / 40%);
 }
 
 .holder a:nth-child(1) {
@@ -489,15 +488,38 @@ button.menu-toggle {
     transform: rotate(-45deg) translateY(0em) translateX(0em);
 }
 
+@media only screen and (max-width: 1200px) {
+    div#projects {
+        height: 200%;
+    }
+
+    .item1 {
+        grid-column-end: 3;
+      }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project-box p {
+        font-size: 1.6vmax;
+    }
+
+    .content {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .project-box h2 {
+        font-size: 2vmax;
+    }
+
+    .tag {
+        font-size: 1.2vmax;
+    }
+}
+
 @media only screen and (max-width: 920px) {
-    .project-box p{
-        font-size: .7em;
-    }
-
-    .project-box h2{
-        font-size: .9em;
-    }
-
     .content {
         padding-left: 2em;
         padding-right: 2em;
@@ -510,6 +532,7 @@ button.menu-toggle {
     .tag{
         font-size: .7em;
     }
+
 }
 
 @media only screen and (max-width: 720px) {
@@ -553,7 +576,9 @@ button.menu-toggle {
         transform: translateY(100%);
     }
 
-
+    .text-content-center.about-text {
+        top: 30%;
+    }
 
     #about, #contact {
         height:100%;
@@ -601,9 +626,26 @@ button.menu-toggle {
 
 }
 
+@media only screen and (max-height: 800px) {
+    .project-box p {
+        text-align: left;
+        margin: 2.5%;
+        font-size: 1.6vmax;
+        line-height: normal;
+    }
+
+    .text-content-center.about-text {
+        top: 100%;
+    }
+
+}
+
 @media only screen and (max-height: 590px) {
     .project-box {
-        height:125vh;
+        height: auto;
+    }
+    .project-box img {
+        height: 50vh;
     }
 
     .content-projects {
@@ -617,6 +659,13 @@ button.menu-toggle {
         padding-right: 0;
     }
 
+    div#about {
+        top: 20%;
+    }
+
+    .text-content-center.about-text {
+        top: 120%;
+    }
 }
 
 @media only screen and (max-width: 700px) and (max-height: 400px) {
