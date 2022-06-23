@@ -138,7 +138,7 @@ img#profile-pic {
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.479);
     margin: 5%;
-    height: 68vh;
+    height: auto;
     box-shadow: 0px 10px 15px 5px rgb(22 22 22 / 40%);
 }
 
